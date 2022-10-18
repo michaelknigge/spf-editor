@@ -1,4 +1,4 @@
-# SPF-Editor (formely known as SPF/SE and SPF/365)
+# SPF-Editor (formely known as SPF/SE)
 
 Powerful editor and file manager that emulates the IBM mainframe ISPF editor. The editor was developed by Tim Tetivia, who unfortunately died in 2022 as a result of a corona infection.
 
