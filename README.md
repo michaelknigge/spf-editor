@@ -13,3 +13,9 @@ Tim protected his development environment with technical tools. Unfortunately, n
 > Any questions please feel free to contact me.
 > 
 >Bonnie
+
+## SPF/SE 6.0 serial number
+To make the SPF/SE release a full working release, you need a serial number. As we've got the permission to distribute SPF/SE for free, we can also make a valid serial number available. You can use the serial number **60101185**.
+
+## SPF/365 product key
+To make the SPF/365 release a full working release, you need a product key. As we've got the permission to distribute SPF/365 for free, we can also make a valid product key available. You can use the product key **i8ds-qj8g-3h7o-7cvr-d39a-iang-hwje**.
