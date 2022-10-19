@@ -1,6 +1,6 @@
 # SPF-Editor (formely known as SPF/SE)
 
-Powerful editor and file manager that emulates the IBM mainframe ISPF editor. The editor was developed by Tim Tetivia, who unfortunately died in 2022 as a result of a corona infection. [SPF/SE 365 Build 3454](../main/binaries/SPFSE365-3454.msi) was the last version Tim released.
+Powerful editor and file manager that emulates the IBM mainframe ISPF editor. The editor was developed by Tim Tetivia, who unfortunately died in 2022 as a result of a corona infection. [SPF/SE 365 Build 3454](../main/binaries/SPFSE365-3454.msi) was the last version Tim released  ([direct download link](../../raw/main/binaries/SPFSE365-3454.msi)).
 
 # Permission to distribute
 
