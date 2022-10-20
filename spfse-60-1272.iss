@@ -9,6 +9,7 @@ DefaultGroupName=SPF SourceEdit 6.0
 OutputDir=.
 ChangesEnvironment=yes
 PrivilegesRequired=admin
+OutputBaseFilename=SPFSE-6.0-1272-SETUP
 
 [Languages]
 Name: "en"; MessagesFile: "compiler:Default.isl"
