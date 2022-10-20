@@ -1,0 +1,11 @@
+Assembler Files           *.asm
+COBOL Program Source      *.cbl;*.cob
+COBOL Copybook            *.cpy
+COBOL All                 *.cbl;*.cpy;*.cob
+C++ and C Program Source  *.cpp;*.c
+C++ and C Data Structures *.h
+Java Program Source       *.java
+HTML Document Source      *.html;*.htm
+SGML Document Source      *.sgml
+Text Files                *.txt
+All Files                 *.*

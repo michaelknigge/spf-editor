@@ -1,0 +1,7 @@
+DateFormat EUR
+VscrollMode CSR
+MaxEntries 30000
+Dismiss TRUE
+ReposList FALSE
+ConfirmDelete TRUE
+Overwrite PROMPT

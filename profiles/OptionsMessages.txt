@@ -1,0 +1,8 @@
+MsgID=FIND35      Action=ShowShortMsg
+MsgID=FILE35      Action=ShowShortMsg
+MsgID=FIND70      Action=ShowShortMsg
+MsgID=FILE90      Action=ShowShortMsg
+MsgID=FILE110     Action=ShowShortMsg
+MsgID=FIND10      Action=ShowShortMsg
+MsgID=CHARSET22   Action=ShowShortMsg
+MsgID=MERGEMSG35  Action=ShowShortMsg
