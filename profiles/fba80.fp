@@ -1,0 +1,10 @@
+Recfm=Fixed
+MaxRecLen=80
+Bounds=1,80
+Offset=0
+CharsetFile=EBCDIC
+CharsetDisplay=ASCII-ISO8859
+NumberType=None
+CapsMode=OFF
+BOOLbackup=FALSE
+BOOLlock=FALSE
