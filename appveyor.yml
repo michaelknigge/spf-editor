@@ -1,0 +1,40 @@
+version: 6.0.1272.{build}
+branches:
+  only:
+  - master
+image: Visual Studio 2017
+init:
+- ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+build_script:
+- cmd: >-
+    mkdir temp1
+
+    "C:\Program Files\7-Zip\7z.exe" e binaries\disk-spf-60-1272.zip -otemp1
+
+    mkdir temp2
+
+    "C:\Program Files\7-Zip\7z.exe" e temp1\spfge60.zip -otemp2
+
+    mkdir orig-bin
+
+    "C:\Program Files\7-Zip\7z.exe" e temp2\bin.zip -oorig-bin
+
+    mkdir orig-dialogs
+
+    "C:\Program Files\7-Zip\7z.exe" e temp2\dialogs.zip -oorig-dialogs
+
+    mkdir orig-help
+
+    "C:\Program Files\7-Zip\7z.exe" e temp2\help.zip -oorig-help
+
+    mkdir orig-macros
+
+    "C:\Program Files\7-Zip\7z.exe" e temp2\macros.zip -oorig-macros
+
+    mkdir orig-profiles
+
+    "C:\Program Files\7-Zip\7z.exe" e temp2\profiles.zip -oorig-profiles
+
+    "C:\Program Files (x86)\Inno Setup 5\iscc.exe" spfse-60-1272.iss
+artifacts:
+- path: '*.exe'
