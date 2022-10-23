@@ -35,6 +35,6 @@ build_script:
 
     "C:\Program Files\7-Zip\7z.exe" e temp2\profiles.zip -oorig-profiles
 
-    "C:\Program Files (x86)\Inno Setup 6\iscc.exe" spfse-60-1272.iss
+    "C:\Program Files (x86)\Inno Setup 6\iscc.exe" spfse-60-1272.iss /DAppveyorBuild={build}
 artifacts:
 - path: '*.exe'
