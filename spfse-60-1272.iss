@@ -1,24 +1,30 @@
+#define AppName         "SPF SourceEdit 6.0"
+#define AppBuildNumber  "1272"
+#define AdminSubkey     "SYSTEM\CurrentControlSet\Control\Session Manager\Environment"
+#define UserSubkey      "Environment"
+
+
 [Setup]
-AppName=SPF SourceEdit 6.0
-AppVerName=SPF SourceEdit 6.0 Build 1272
+AppName={#AppName}
+AppVerName={#AppName} Build {#AppBuildNumber}
 AppPublisher=Command Technology Corporation
 AppPublisherURL=https://github.com/michaelknigge/spf-editor
 AppCopyright=Copyright (C) Command Technology Corporation
-DefaultDirName={pf}\SPF SourceEdit 6.0
-DefaultGroupName=SPF SourceEdit 6.0
+DefaultGroupName={#AppName}
+DefaultDirName={code:GetDefaultDirName}
 OutputDir=.
 ChangesEnvironment=yes
-PrivilegesRequired=admin
-OutputBaseFilename=SPFSE-6.0-1272-{#AppveyorBuild}-SETUP
+PrivilegesRequired=lowest
+PrivilegesRequiredOverridesAllowed=dialog commandline
+OutputBaseFilename=SPFSE-6.0.{#AppBuildNumber}.{#AppveyorBuildNumber}-SETUP
 
 [Languages]
 Name: "en"; MessagesFile: "compiler:Default.isl"
-Name: "de"; MessagesFile: "compiler:Languages\German.isl"
 
 [Dirs]
-Name: "{commonappdata}\SPF SourceEdit 6.0"; Permissions: everyone-modify;
-Name: "{app}\macros";                       Permissions: everyone-modify;
-Name: "{app}\dialogs";                      Permissions: everyone-modify;
+Name: "{autoappdata}\{#AppName}"; Permissions: everyone-modify;
+Name: "{app}\macros";             Permissions: everyone-modify;
+Name: "{app}\dialogs";            Permissions: everyone-modify;
 
 [Files]
 Source: "orig-bin\*";       DestDir: "{app}\bin";          Flags: replacesameversion restartreplace
@@ -33,9 +39,21 @@ Source: "profiles\*";       DestDir: "{app}\profiles";     Flags: replacesamever
 Source: "profiles\*";       DestDir: "{app}\defaults";     Flags: replacesameversion restartreplace
 
 [Registry]
-Root: HKLM; Subkey: "SYSTEM\CurrentControlSet\Control\Session Manager\Environment"; ValueType: string; ValueName: "SPFGE60";   ValueData: "{app}"; Flags: uninsdeletevalue
-Root: HKLM; Subkey: "SYSTEM\CurrentControlSet\Control\Session Manager\Environment"; ValueType: string; ValueName: "SPFGE60RW"; ValueData: "{commonappdata}\SPF SourceEdit 6.0"; Flags: uninsdeletevalue
+Root: HKLM; Check: IsAdminLoggedOn;     Subkey: "{#AdminSubkey}"; ValueType: string; ValueName: "SPFGE60";   ValueData: "{app}";                    Flags: uninsdeletevalue
+Root: HKLM; Check: IsAdminLoggedOn;     Subkey: "{#AdminSubkey}"; ValueType: string; ValueName: "SPFGE60RW"; ValueData: "{autoappdata}\{#AppName}"; Flags: uninsdeletevalue
+
+Root: HKCU; Check: not IsAdminLoggedOn; Subkey: "{#UserSubkey}";  ValueType: string; ValueName: "SPFGE60";   ValueData: "{app}";                    Flags: uninsdeletevalue
+Root: HKCU; Check: not IsAdminLoggedOn; Subkey: "{#UserSubkey}";  ValueType: string; ValueName: "SPFGE60RW"; ValueData: "{autoappdata}\{#AppName}"; Flags: uninsdeletevalue
 
 [Icons]
 Name: "{group}\SPF SourceEdit 6.0"; Filename: "{app}\bin\GraphicEdition60.exe";
 Name: "{group}\Uninstall";          Filename: "{uninstallexe}"
+
+[Code]
+function GetDefaultDirName(Param: String): String;
+begin
+  if IsAdminLoggedOn then
+    Result := ExpandConstant('{pf}') + '\{#AppName}'
+  else
+    Result := GetEnv('LOCALAPPDATA') + '\{#AppName}'
+end;
