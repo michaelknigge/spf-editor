@@ -39,11 +39,11 @@ Source: "profiles\*";       DestDir: "{app}\profiles";     Flags: replacesamever
 Source: "profiles\*";       DestDir: "{app}\defaults";     Flags: replacesameversion restartreplace
 
 [Registry]
-Root: HKLM; Check: IsAdminLoggedOn;     Subkey: "{#AdminSubkey}"; ValueType: string; ValueName: "SPFGE60";   ValueData: "{app}";                    Flags: uninsdeletevalue
-Root: HKLM; Check: IsAdminLoggedOn;     Subkey: "{#AdminSubkey}"; ValueType: string; ValueName: "SPFGE60RW"; ValueData: "{autoappdata}\{#AppName}"; Flags: uninsdeletevalue
+Root: HKLM; Check: IsAdminInstallMode;     Subkey: "{#AdminSubkey}"; ValueType: string; ValueName: "SPFGE60";   ValueData: "{app}";                    Flags: uninsdeletevalue
+Root: HKLM; Check: IsAdminInstallMode;     Subkey: "{#AdminSubkey}"; ValueType: string; ValueName: "SPFGE60RW"; ValueData: "{autoappdata}\{#AppName}"; Flags: uninsdeletevalue
 
-Root: HKCU; Check: not IsAdminLoggedOn; Subkey: "{#UserSubkey}";  ValueType: string; ValueName: "SPFGE60";   ValueData: "{app}";                    Flags: uninsdeletevalue
-Root: HKCU; Check: not IsAdminLoggedOn; Subkey: "{#UserSubkey}";  ValueType: string; ValueName: "SPFGE60RW"; ValueData: "{autoappdata}\{#AppName}"; Flags: uninsdeletevalue
+Root: HKCU; Check: not IsAdminInstallMode; Subkey: "{#UserSubkey}";  ValueType: string; ValueName: "SPFGE60";   ValueData: "{app}";                    Flags: uninsdeletevalue
+Root: HKCU; Check: not IsAdminInstallMode; Subkey: "{#UserSubkey}";  ValueType: string; ValueName: "SPFGE60RW"; ValueData: "{autoappdata}\{#AppName}"; Flags: uninsdeletevalue
 
 [Icons]
 Name: "{group}\SPF SourceEdit 6.0"; Filename: "{app}\bin\GraphicEdition60.exe";
@@ -52,7 +52,7 @@ Name: "{group}\Uninstall";          Filename: "{uninstallexe}"
 [Code]
 function GetDefaultDirName(Param: String): String;
 begin
-  if IsAdminLoggedOn then
+  if IsAdminInstallMode then
     Result := ExpandConstant('{pf}') + '\{#AppName}'
   else
     Result := GetEnv('LOCALAPPDATA') + '\{#AppName}'
