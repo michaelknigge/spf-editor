@@ -44,7 +44,7 @@ For this reason, the permissions of this directory is set to *world-writable* to
 If you want to change the path to this directory, just create the directory where you want and set the envitonment variable *SPF60RW* to the corresponding path.
 
 ### Changes to the original release
-See the directories [dialogs](../../dialogs), [macros](../../macros) and [profiles](../../profiles) for files that are changed or added.
+See the directories [dialogs](dialogs), [macros](macros) and [profiles](profiles) for files that are changed or added.
 
 The options are set so that SPF/SE 6.0 looks and feels (more of less) like the editor of ISPF under z/OS. This includes that ENTER is assigned to the right CNTL key and the ENTER key on the numeric pad.
 And some options are set so that unprintable characters are not shown (because with some fonts SPF/SE 6.0 doesn't display them corrently).
@@ -57,7 +57,7 @@ Two releases of SPF/SE 365 are available in the [binaries](../main/binaries) dir
 
 # Macros
 Several macros are added to the vanilla SPF/SE installation if you use one the custom installers.
-Here are some of them explained. You can see all of them in the directory [macros](../macros).
+Here are some of them explained. You can see all of them in the directory [macros](macros).
 
 | Macro         | Purpose                                                                |
 | ------------- | ---------------------------------------------------------------------- |
@@ -101,7 +101,7 @@ Some macros are only useful if assigned to a key. See what is assigned by defaul
 
 # File profiles
 The fun begins with file profiles. The provided InnoSetup installer installs some useful profiles (at least useful if you work a lot with files from z/OS or BS2000 Mainframes).
-You can find them in the directory [profiles](../../profiles). Here are some of the noteworthly file profiles:
+You can find them in the directory [profiles](profiles). Here are some of the noteworthly file profiles:
 
 | Profile       | File type                                                                                                                                                                         |
 | ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
