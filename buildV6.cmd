@@ -21,7 +21,7 @@ mkdir temp1
 "C:\Program Files\7-Zip\7z.exe" e binaries\disk-spf-60-%1.zip -otemp1
 
 rem Extracting the graphic edition from the distribution
-if exist temp2 rmdir /S /Q temp1
+if exist temp2 rmdir /S /Q temp2
 mkdir temp2
 "C:\Program Files\7-Zip\7z.exe" e temp1\spfge60.zip -otemp2
 
