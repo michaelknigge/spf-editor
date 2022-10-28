@@ -31,6 +31,9 @@ The releases here are all built by the free CI service [AppVeyor](https://www.ap
 The provided installer is created with [InnoSetup](http://www.jrsoftware.org/isinfo.php).
 The installer supports silent (unattended) installations. See [InnoSetup Setup Command Line Parameters](https://jrsoftware.org/ishelp/index.php?topic=setupcmdline) for details.
 
+### Provided SPF/SE 6.0 installers
+Currently there is only one installer available, see [SPF/SE 6.0 Build 1727 installer](../../releases/tag/v6.0.1272.6). It is not the latest release of the SPF/SE 6.0 series but it is the release that I use without any problems since january 2010.
+
 ### Installation for all users
 The default installation directory is **C:\Program Files (x86)\SPF SourceEdit 6.0** if you install SPF/SE 6.0 for all users.
 Note that the permissions of the subdirectories **macros** and **dialogs** are set to *world-writable* so any user that uses SPF/SE 6.0 can add and edit new macros and dialogs.
