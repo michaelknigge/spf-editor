@@ -39,8 +39,8 @@ Source: "macros\*";         DestDir: "{app}\macros";       Flags: replacesamever
 ; The file "spfse.prf" is excluded. The default settings for SPF/SE 6.0 are stored
 ; in file "default.prf". Starting with Build 1283 the location of the file changed
 ; as well as the name (changed from "default.prf" to "spfse.prf").
-Source: "profiles\*";       DestDir: "{app}\profiles";     Flags: replacesameversion restartreplace; Excludes: "spfse.prf";
-Source: "profiles\*";       DestDir: "{app}\defaults";     Flags: replacesameversion restartreplace; Excludes: "spfse.prf";
+Source: "profiles-v6\*";    DestDir: "{app}\profiles";     Flags: replacesameversion restartreplace; Excludes: "spfse.prf";
+Source: "profiles-v6\*";    DestDir: "{app}\defaults";     Flags: replacesameversion restartreplace; Excludes: "spfse.prf";
 
 [Registry]
 Root: HKLM; Check: IsAdminInstallMode;     Subkey: "{#AdminSubkey}"; ValueType: string; ValueName: "SPFGE60";   ValueData: "{app}";                    Flags: uninsdeletevalue

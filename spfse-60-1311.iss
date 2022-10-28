@@ -40,7 +40,7 @@ Source: "macros\*";         DestDir: "{app}\macros";       Flags: replacesamever
 ; The file "default.prf" is excluded. Starting with Build 1283 the location
 ; of the file containing default settings changed as well as the name of
 ; the file (changed from "default.prf" to "spfse.prf").
-Source: "profiles\*";       DestDir: "{autoappdata}\{#AppName}\System\AllUsers"; Flags: replacesameversion restartreplace; Excludes: "default.prf"
+Source: "profiles-v6\*";    DestDir: "{autoappdata}\{#AppName}\System\AllUsers"; Flags: replacesameversion restartreplace; Excludes: "default.prf"
 
 [Registry]
 Root: HKLM; Check: IsAdminInstallMode;     Subkey: "{#AdminSubkey}"; ValueType: string; ValueName: "SPFGE60";   ValueData: "{app}";                    Flags: uninsdeletevalue
