@@ -2,6 +2,8 @@
 
 Powerful editor and file manager that emulates the IBM mainframe ISPF editor. The editor was developed by Tim Tetivia, who unfortunately died in 2022 as a result of a corona infection. [SPF/SE 365 Build 3454](../main/binaries/SPFSE365-3454.msi) was the last version Tim released ([direct download link](../../raw/main/binaries/SPFSE365-3454.msi)).
 
+![Screenshot](../../raw/main/screenshot-small.png "Screenshot")
+
 # Permission to distribute
 
 Tim protected his development environment with technical tools. Unfortunately, nobody knew how to access the data (i. e. passwords) to his environment and so unfortunately nobody, not even members of his family, had access to the source code of the editor. With some research and help from other SPF users (namely Peter aka Verizon), it was possible to contact Tim's wife Bonnie. She gave us permission to distribute the editor for free. It should be in Tim's interest that his editor continues to be used.
