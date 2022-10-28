@@ -1,0 +1,12 @@
+OffScreen AutoRecoverNotify
+AdjustXpos 0
+AdjustYpos 0
+WTaskBarDirection None
+WTaskBarAdjust 0
+TaskBarFlistTabStyle Path
+HighViz FALSE
+MenuEZ FALSE
+BackBtn FALSE
+3270EnterBtn FALSE
+ScrollBtn TRUE
+ShowToolbar FALSE
