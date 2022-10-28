@@ -34,7 +34,7 @@ Source: "orig-help\*";      DestDir: "{app}\help";         Flags: replacesamever
 Source: "orig-macros\*";    DestDir: "{app}\macros";       Flags: replacesameversion restartreplace
 Source: "orig-profiles\*";  DestDir: "{app}\profiles";     Flags: replacesameversion restartreplace
 
-Source: "dialogs\*";        DestDir: "{app}\dialogs";      Flags: replacesameversion restartreplace
+Source: "dialogs\*";        DestDir: "{app}\dialogs";      Flags: replacesameversion restartreplace; Excludes: "SpfDialog.about.txt"
 Source: "macros\*";         DestDir: "{app}\macros";       Flags: replacesameversion restartreplace
 
 ; The file "default.prf" is excluded. Starting with Build 1283 the location
