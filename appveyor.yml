@@ -14,3 +14,8 @@ build_script:
     buildV365 3454 %APPVEYOR_BUILD_NUMBER%
 artifacts:
 - path: '*.exe'
+  name: Installers
+
+- path: '*.log'
+  name: MSI log files
+
