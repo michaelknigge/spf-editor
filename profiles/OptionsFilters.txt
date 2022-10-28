@@ -1,3 +1,4 @@
+AFP print files           *.afp
 Assembler Files           *.asm
 COBOL Program Source      *.cbl;*.cob
 COBOL Copybook            *.cpy
