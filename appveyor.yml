@@ -7,34 +7,8 @@ init:
 - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 build_script:
 - cmd: >-
-    mkdir temp1
+    buildV6 1272 %APPVEYOR_BUILD_NUMBER%
 
-    "C:\Program Files\7-Zip\7z.exe" e binaries\disk-spf-60-1311.zip -otemp1
-
-    mkdir temp2
-
-    "C:\Program Files\7-Zip\7z.exe" e temp1\spfge60.zip -otemp2
-
-    mkdir orig-bin
-
-    "C:\Program Files\7-Zip\7z.exe" e temp2\bin.zip -oorig-bin
-
-    mkdir orig-dialogs
-
-    "C:\Program Files\7-Zip\7z.exe" e temp2\dialogs.zip -oorig-dialogs
-
-    mkdir orig-help
-
-    "C:\Program Files\7-Zip\7z.exe" e temp2\help.zip -oorig-help
-
-    mkdir orig-macros
-
-    "C:\Program Files\7-Zip\7z.exe" e temp2\macros.zip -oorig-macros
-
-    mkdir orig-profiles
-
-    "C:\Program Files\7-Zip\7z.exe" e temp2\profiles.zip -oorig-profiles
-
-    "C:\Program Files (x86)\Inno Setup 6\iscc.exe" spfse-60-1311.iss /DAppveyorBuildNumber=%APPVEYOR_BUILD_NUMBER%
+    buildV6 1311 %APPVEYOR_BUILD_NUMBER%
 artifacts:
 - path: '*.exe'
