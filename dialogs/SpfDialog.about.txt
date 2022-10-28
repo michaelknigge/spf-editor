@@ -20,4 +20,4 @@ obj { type=output row=9  col=1 label="       ExeFile:" width=80 var=&ExeFile }
 obj { type=separator row=10 col=1 }
 
 obj { type=output row=11 col=1 label="        Author:" width=82 var=&Author }
-obj { type=output row=12 col=1  text="           Web: https://github.com/michaelknigge/spf-editor" }
+obj { type=static row=12 col=1  text="           Web: https://github.com/michaelknigge/spf-editor" }
