@@ -1,5 +1,5 @@
 #define AppName         "SPF SourceEdit 6.0"
-#define AppBuildNumber  "1272"
+#define AppBuildNumber  "1311"
 #define AdminSubkey     "SYSTEM\CurrentControlSet\Control\Session Manager\Environment"
 #define UserSubkey      "Environment"
 
@@ -22,9 +22,10 @@ OutputBaseFilename=SPFSE-6.0.{#AppBuildNumber}.{#AppveyorBuildNumber}-SETUP
 Name: "en"; MessagesFile: "compiler:Default.isl"
 
 [Dirs]
-Name: "{autoappdata}\{#AppName}"; Permissions: everyone-modify;
-Name: "{app}\macros";             Permissions: everyone-modify;
-Name: "{app}\dialogs";            Permissions: everyone-modify;
+Name: "{autoappdata}\{#AppName}";          Permissions: everyone-modify;
+Name: "{autoappdata}\{#AppName}\AllUsers"; Permissions: everyone-modify;
+Name: "{app}\macros";                      Permissions: everyone-modify;
+Name: "{app}\dialogs";                     Permissions: everyone-modify;
 
 [Files]
 Source: "orig-bin\*";       DestDir: "{app}\bin";          Flags: replacesameversion restartreplace
@@ -36,11 +37,10 @@ Source: "orig-profiles\*";  DestDir: "{app}\profiles";     Flags: replacesamever
 Source: "dialogs\*";        DestDir: "{app}\dialogs";      Flags: replacesameversion restartreplace
 Source: "macros\*";         DestDir: "{app}\macros";       Flags: replacesameversion restartreplace
 
-; The file "spfse.prf" is excluded. The default settings for SPF/SE 6.0 are stored
-; in file "default.prf". Starting with Build 1283 the location of the file changed
-; as well as the name (changed from "default.prf" to "spfse.prf").
-Source: "profiles\*";       DestDir: "{app}\profiles";     Flags: replacesameversion restartreplace; Excludes: "spfse.prf";
-Source: "profiles\*";       DestDir: "{app}\defaults";     Flags: replacesameversion restartreplace; Excludes: "spfse.prf";
+; The file "default.prf" is excluded. Starting with Build 1283 the location
+; of the file containing default settings changed as well as the name of
+; the file (changed from "default.prf" to "spfse.prf").
+Source: "profiles\*";       DestDir: "{autoappdata}\{#AppName}\AllUsers"; Flags: replacesameversion restartreplace; Excludes: "default.prf"
 
 [Registry]
 Root: HKLM; Check: IsAdminInstallMode;     Subkey: "{#AdminSubkey}"; ValueType: string; ValueName: "SPFGE60";   ValueData: "{app}";                    Flags: uninsdeletevalue

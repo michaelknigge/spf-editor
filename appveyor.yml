@@ -9,7 +9,7 @@ build_script:
 - cmd: >-
     mkdir temp1
 
-    "C:\Program Files\7-Zip\7z.exe" e binaries\disk-spf-60-1272.zip -otemp1
+    "C:\Program Files\7-Zip\7z.exe" e binaries\disk-spf-60-1311.zip -otemp1
 
     mkdir temp2
 
@@ -35,6 +35,6 @@ build_script:
 
     "C:\Program Files\7-Zip\7z.exe" e temp2\profiles.zip -oorig-profiles
 
-    "C:\Program Files (x86)\Inno Setup 6\iscc.exe" spfse-60-1272.iss /DAppveyorBuildNumber=%APPVEYOR_BUILD_NUMBER%
+    "C:\Program Files (x86)\Inno Setup 6\iscc.exe" spfse-60-1311.iss /DAppveyorBuildNumber=%APPVEYOR_BUILD_NUMBER%
 artifacts:
 - path: '*.exe'
