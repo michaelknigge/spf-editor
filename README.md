@@ -32,7 +32,11 @@ The provided installer is created with [InnoSetup](http://www.jrsoftware.org/isi
 The installer supports silent (unattended) installations. See [InnoSetup Setup Command Line Parameters](https://jrsoftware.org/ishelp/index.php?topic=setupcmdline) for details.
 
 ### Provided SPF/SE 6.0 installers
-Currently there is only one installer available, see [SPF/SE 6.0 Build 1727 installer](../../releases/tag/v6.0.1272.6). It is not the latest release of the SPF/SE 6.0 series but it is the release that I use without any problems since january 2010.
+Currently there are two installers for SPF/SE 6.0 available. Installers for SPF/SE 365 max follow.
+
+The first installer is [SPF/SE 6.0 Build 1272 installer](../../releases/tag/v6.0.1272.6). It is not the latest release of the SPF/SE 6.0 series but it is the release that I use without any problems since january 2010.
+
+The second installer is [SPF/SE 6.0 Build 1311 installer](../../releases/tag/v6.0.1311.8). Note that since SPF/SE 6.0 Build 1283 the location of the default settings changed, as well as the file name. The file containing the default settings is now "spfse.prf" and is located in the directory %SPF60RW%\System\AllUsers.
 
 ### Installation for all users
 The default installation directory is **C:\Program Files (x86)\SPF SourceEdit 6.0** if you install SPF/SE 6.0 for all users.
