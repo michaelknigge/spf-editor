@@ -29,7 +29,7 @@ The original version comes with an interactive text mode installer which makes i
 For this reason I've built a professional installer.
 The releases here are all built by the free CI service [AppVeyor](https://www.appveyor.com/) and can be downloaded from the [Releases](https://github.com/michaelknigge/spf-editor/releases).
 The provided installer is created with [InnoSetup](http://www.jrsoftware.org/isinfo.php).
-The installer supports silent (unattended) installations. [InnoSetup Setup Command Line Parameters](See https://jrsoftware.org/ishelp/index.php?topic=setupcmdline) for details.
+The installer supports silent (unattended) installations. See [InnoSetup Setup Command Line Parameters](https://jrsoftware.org/ishelp/index.php?topic=setupcmdline) for details.
 
 ### Installation for all users
 The default installation directory is **C:\Program Files (x86)\SPF SourceEdit 6.0** if you install SPF/SE 6.0 for all users.
