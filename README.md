@@ -36,7 +36,7 @@ Currently there are two installers for SPF/SE 6.0 available. Installers for SPF/
 
 The first installer is [SPF/SE 6.0 Build 1272 installer](../../releases/tag/v6.0.1272.6). It is not the latest release of the SPF/SE 6.0 series but it is the release that I use without any problems since january 2010.
 
-The second installer is [SPF/SE 6.0 Build 1311 installer](../../releases/tag/v6.0.1311.8). Note that since SPF/SE 6.0 Build 1283 the location of the default settings changed, as well as the file name. The file containing the default settings is now "spfse.prf" and is located in the directory %SPF60RW%\System\AllUsers.
+The second installer is [SPF/SE 6.0 Build 1311 installer](../../releases/tag/v6.0.1311.8). Note that since SPF/SE 6.0 Build 1283 the location of the default settings changed, as well as the file name. The file containing the default settings is now *spfse.prf* and is located in the directory *%SPF60RW%\System\AllUsers*.
 
 ### Installation for all users
 The default installation directory is **C:\Program Files (x86)\SPF SourceEdit 6.0** if you install SPF/SE 6.0 for all users.
