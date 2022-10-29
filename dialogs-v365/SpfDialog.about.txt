@@ -1,0 +1,23 @@
+dialog { title="About" }
+
+obj { type=button row=1  col=1  width=12 text="CopyToFile" }
+obj { type=static row=1  col=16  text="(C) Copyright Command Technology LLC " }
+obj { type=output row=1  col=54 width=9 var=&CopyrightYears }
+obj { type=static row=1  col=64 text="All Rights Reserved" }
+
+obj { type=separator row=2 col=1 }
+
+obj { type=output row=3  col=1 label="       Product:" width=82 var=&Product }
+obj { type=output row=4  col=1 label="     Certified:" width=82 var=&Certified }
+
+obj { type=separator row=5 col=1 }
+
+obj { type=output row=6  col=1 label="   OptionsUser:" width=82 var=&OptionsUser }
+obj { type=output row=7  col=1 label="OptionsAllUser:" width=82 var=&OptionsAllUser }
+obj { type=output row=8  col=1 label="OptionsDefault:" width=82 var=&OptionsDefault }
+obj { type=output row=9  col=1 label="       ExeFile:" width=80 var=&ExeFile }
+
+obj { type=separator row=10 col=1 }
+
+obj { type=output row=11 col=1 label="        Author:" width=82 var=&Author }
+obj { type=static row=12 col=1  text="           Web: https://github.com/michaelknigge/spf-editor" }
