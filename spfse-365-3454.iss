@@ -4,7 +4,6 @@
 #define UserSubkey      "Environment"
 #define InstallDir      "C:\Program Files (x86)\SPFSE365\Graphic"
 
-
 [Setup]
 AppName={#AppName}
 AppVerName={#AppName} Build {#AppBuildNumber}
@@ -27,6 +26,9 @@ Name: "{autoappdata}\SPF-Options";         Permissions: everyone-modify;
 Name: "{app}\Macros";                      Permissions: everyone-modify;
 Name: "{app}\Dialogs";                     Permissions: everyone-modify;
 
+[Tasks]
+Name: "desktopicon";     Description: "{cm:CreateDesktopIcon}";     GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
+
 [Files]
 Source: "{#InstallDir}\Bin\*";       DestDir: "{app}\Bin";          Flags: replacesameversion restartreplace
 Source: "{#InstallDir}\Dialogs\*";   DestDir: "{app}\Dialogs";      Flags: replacesameversion restartreplace
@@ -46,10 +48,13 @@ Root: HKLM; Check: IsAdminInstallMode;     Subkey: "{#AdminSubkey}"; ValueType: 
 Root: HKCU; Check: not IsAdminInstallMode; Subkey: "{#UserSubkey}";  ValueType: string; ValueName: "SPFGE365";   ValueData: "{app}";                     Flags: uninsdeletevalue
 Root: HKCU; Check: not IsAdminInstallMode; Subkey: "{#UserSubkey}";  ValueType: string; ValueName: "SPFGE365RW"; ValueData: "{autoappdata}\SPF-Options"; Flags: uninsdeletevalue
 
+[Icons]
+Name: "{group}\{#AppName}";  Filename: "{app}\bin\SPFGE80.exe";
+Name: "{group}\Uninstall";   Filename: "{uninstallexe}"
 
 [Icons]
-Name: "{group}\SPF SourceEdit 365"; Filename: "{app}\bin\SPFGE80.exe";
-Name: "{group}\Uninstall";          Filename: "{uninstallexe}"
+Check: IsAdminInstallMode;     Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\bin\SPFGE80.exe"; Tasks: desktopicon
+Check: not IsAdminInstallMode; Name: "{userdesktop}\{#MyAppName}";   Filename: "{app}\bin\SPFGE80.exe"; Tasks: desktopicon
 
 [Code]
 function GetDefaultDirName(Param: String): String;
