@@ -36,7 +36,7 @@ Source: "{#InstallDir}\Help\*";      DestDir: "{app}\Help";         Flags: repla
 Source: "{#InstallDir}\Macros\*";    DestDir: "{app}\Macros";       Flags: replacesameversion restartreplace
 Source: "{#InstallDir}\Profiles\*";  DestDir: "{app}\Profiles";     Flags: replacesameversion restartreplace
 
-Source: "dialogs\*";        DestDir: "{app}\Dialogs";  Flags: replacesameversion restartreplace; Excludes: "about.dlg"
+Source: "dialogs-v365\*";   DestDir: "{app}\Dialogs";  Flags: replacesameversion restartreplace
 Source: "macros\*";         DestDir: "{app}\Macros";   Flags: replacesameversion restartreplace
 
 Source: "profiles-v365\*";  DestDir: "{autoappdata}\SPF-Options"; Flags: replacesameversion restartreplace;

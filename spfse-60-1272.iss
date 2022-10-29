@@ -33,7 +33,7 @@ Source: "orig-help\*";      DestDir: "{app}\help";         Flags: replacesamever
 Source: "orig-macros\*";    DestDir: "{app}\macros";       Flags: replacesameversion restartreplace
 Source: "orig-profiles\*";  DestDir: "{app}\profiles";     Flags: replacesameversion restartreplace
 
-Source: "dialogs\*";        DestDir: "{app}\dialogs";      Flags: replacesameversion restartreplace; Excludes: "SpfDialog.about.txt"
+Source: "dialogs-v6\*";     DestDir: "{app}\dialogs";      Flags: replacesameversion restartreplace
 Source: "macros\*";         DestDir: "{app}\macros";       Flags: replacesameversion restartreplace
 
 ; The file "spfse.prf" is excluded. The default settings for SPF/SE 6.0 are stored
