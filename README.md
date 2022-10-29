@@ -16,6 +16,11 @@ Tim protected his development environment with technical tools. Unfortunately, n
 > 
 >Bonnie
 
+# Request or offer to SPF/SE users
+If you have other releases of SPF/SE and would like to see them here, please contact me an I'll add them here.
+
+Wouldn't it be great if (the latest releases of) SPF/SE 7.0 and SPF/SE 8.0 would also be available here?
+
 # SPF/SE 6.0
 Version 6.0 is a solid release that I use daily. Here are some instructions and a built installer that makes it easier to use Version 6.0.
 
