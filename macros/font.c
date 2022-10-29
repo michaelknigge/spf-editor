@@ -28,7 +28,5 @@ void main(void)
    if(strcmp(SPFservice("dialog", "setfont"), "OK") == 0)
    {
       SPFservice("cmd", strcompose("FONTSET EDIT,", SPFservice("vget", "SETFONT.List.Reply.1"));
-      SPFservice("cmd", strcompose("FONTSET DIALOG,", SPFservice("vget", "SETFONT.List.Reply.1"));
-      SPFservice("cmd", strcompose("FONTSET PRINT,", SPFservice("vget", "SETFONT.List.Reply.1"));
    }
 }
