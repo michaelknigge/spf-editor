@@ -27,7 +27,8 @@ Name: "{app}\Macros";                      Permissions: everyone-modify;
 Name: "{app}\Dialogs";                     Permissions: everyone-modify;
 
 [Tasks]
-Name: "desktopicon";     Description: "{cm:CreateDesktopIcon}";     GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
+Name: "desktopicon"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; Description: "{cm:CreateDesktopIcon}"
+Name: "fonts";       GroupDescription: "Additional fonts";     Flags: unchecked; Description: "Install TrueType font ""Source Code Pro"""
 
 [Files]
 Source: "{#InstallDir}\Bin\*";       DestDir: "{app}\Bin";          Flags: replacesameversion restartreplace
@@ -40,6 +41,8 @@ Source: "dialogs-v365\*";   DestDir: "{app}\Dialogs";  Flags: replacesameversion
 Source: "macros\*";         DestDir: "{app}\Macros";   Flags: replacesameversion restartreplace
 
 Source: "profiles-v365\*";  DestDir: "{autoappdata}\SPF-Options"; Flags: replacesameversion restartreplace;
+
+#include "fonts.iss"
 
 [Registry]
 Root: HKLM; Check: IsAdminInstallMode;     Subkey: "{#AdminSubkey}"; ValueType: string; ValueName: "SPFGE365";   ValueData: "{app}";                     Flags: uninsdeletevalue
