@@ -33,7 +33,7 @@ The provided installer is created with [InnoSetup](http://www.jrsoftware.org/isi
 
 ### Silent installation
 The installer supports silent (unattended) installations. See [InnoSetup Setup Command Line Parameters](https://jrsoftware.org/ishelp/index.php?topic=setupcmdline) for details.
-A desktop icon can be created by enabling the task *desktopicon* and the included font [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) by enabling the task *fonts*.
+A desktop icon can be created by enabling the task *desktopicon* and the included font [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) can be installed by enabling the task *fonts*.
 A silent installation for all users that also creates a desktop icon and installs the fonts can be invoked with
 
 ```
@@ -42,6 +42,7 @@ SPFSE-6.0.1311.20-SETUP.exe /VERYSILENT /ALLUSERS /TASKS="desktopicon,fonts"
 
 If you want to install SPF/SE 6.0 just for the current user and not for all users, replace */ALLUSERS* with */CURRENTUSER*.
 There are more parameters avaiable (i. e. for creating a log file).
+
 As mentioned, please see the [InnoSetup Setup Command Line Parameters](https://jrsoftware.org/ishelp/index.php?topic=setupcmdline) for details.
 
 ### Provided SPF/SE 6.0 installers
@@ -113,7 +114,7 @@ The provided installer is created with [InnoSetup](http://www.jrsoftware.org/isi
 
 ### Silent installation
 The installer supports silent (unattended) installations. See [InnoSetup Setup Command Line Parameters](https://jrsoftware.org/ishelp/index.php?topic=setupcmdline) for details.
-A desktop icon can be created by enabling the task *desktopicon* and the included font [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) by enabling the task *fonts*.
+A desktop icon can be created by enabling the task *desktopicon* and the included font [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) can be installed by enabling the task *fonts*.
 A silent installation for all users that also creates a desktop icon and installs the fonts can be invoked with
 
 ```
@@ -122,6 +123,7 @@ SPFSE-365.3454.20-SETUP.exe /VERYSILENT /ALLUSERS /TASKS="desktopicon,fonts"
 
 If you want to install SPF/SE 365 just for the current user and not for all users, replace */ALLUSERS* with */CURRENTUSER*.
 There are more parameters avaiable (i. e. for creating a log file).
+
 As mentioned, please see the [InnoSetup Setup Command Line Parameters](https://jrsoftware.org/ishelp/index.php?topic=setupcmdline) for details.
 
 ### Provided SPF/SE 356 installers
