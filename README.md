@@ -34,13 +34,22 @@ The provided installer is created with [InnoSetup](http://www.jrsoftware.org/isi
 ### Silent installation
 The installer supports silent (unattended) installations. See [InnoSetup Setup Command Line Parameters](https://jrsoftware.org/ishelp/index.php?topic=setupcmdline) for details.
 A desktop icon can be created by enabling the task *desktopicon* and the included font [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) by enabling the task *fonts*.
+A silent installation for all users that also creates a desktop icon and installs the fonts can be invoked with
+
+```
+SPFSE-6.0.1311.20-SETUP.exe /VERYSILENT /ALLUSERS /TASKS="desktopicon,fonts"
+```
+
+If you want to install SPF/SE 6.0 just for the current user and not for all users, replace */ALLUSERS* with */CURRENTUSER*.
+There are more parameters avaiable (i. e. for creating a log file).
+As mentioned, please see the [InnoSetup Setup Command Line Parameters](https://jrsoftware.org/ishelp/index.php?topic=setupcmdline) for details.
 
 ### Provided SPF/SE 6.0 installers
 Currently there are two installers for SPF/SE 6.0 available. An installer for SPF/SE 365 is also available.
 
-The first installer is [SPF/SE 6.0 Build 1272 installer](../../releases/tag/v6.0.1272.6). It is not the latest release of the SPF/SE 6.0 series but it is the release that I use without any problems since january 2010.
+The first installer is [SPF/SE 6.0 Build 1272 installer](../../releases/tag/v6.0.1272.20). It is not the latest release of the SPF/SE 6.0 series but it is the release that I use without any problems since january 2010.
 
-The second installer is [SPF/SE 6.0 Build 1311 installer](../../releases/tag/v6.0.1311.8). Note that since SPF/SE 6.0 Build 1283 the location of the default settings changed, as well as the file name. The file containing the default settings is now *spfse.prf* and is located in the directory *%SPF60RW%\System\AllUsers*.
+The second installer is [SPF/SE 6.0 Build 1311 installer](../../releases/tag/v6.0.1311.20). Note that since SPF/SE 6.0 Build 1283 the location of the default settings changed, as well as the file name. The file containing the default settings is now *spfse.prf* and is located in the directory *%SPF60RW%\System\AllUsers*.
 
 ### Installation for all users
 The default installation directory is **C:\Program Files (x86)\SPF SourceEdit 6.0** if you install SPF/SE 6.0 for all users.
@@ -74,7 +83,7 @@ That is, the characters will not align to the expected monospace column position
 
 To eliminate this effect, alternate display character are assigned for all non-displayable character codes.
 Assigned is the space character. To change this settings review *Options*, item *Editor*, item *Display Codes*.
-The relevant configuration file is [OptionsDisplayCodes.txt](OptionsDisplayCodes.txt).
+The relevant configuration file is [OptionsDisplayCodes.txt](profiles-v6/OptionsDisplayCodes.txt).
 Note that this setting is independent from the active font.
 
 ### Fonts
@@ -91,14 +100,58 @@ For this reason I also provide an installer for SPF/SE 365.
 
 ## Product key
 To make the SPF/SE 365 release a full working release, you need a product key. As we've got the permission to distribute SPF/SE for free, we can also make a valid product key available. You can use the product key **i8ds-qj8g-3h7o-7cvr-d39a-iang-hwje**.
+
 Two releases of SPF/SE 365 are available in the [binaries](../main/binaries) directory. [SPF/SE 365 Build 3163](../../raw/main/binaries/SPFSE365-3163.msi) requires a product key, the latest version [SPF/SE 365 Build 3454](../../raw/main/binaries/SPFSE365-3454.msi) will work without a product key.
+
+## Installer
+The original version comes as an MSI package that was very limited in its usage.
+It was only possible to install with administrative rights and you've not been able to disable the creation of desktop icons.
+For this reason I've built a professional installer.
+
+The releases here are all built by the free CI service [AppVeyor](https://www.appveyor.com/) and can be downloaded from the [Releases](https://github.com/michaelknigge/spf-editor/releases).
+The provided installer is created with [InnoSetup](http://www.jrsoftware.org/isinfo.php).
+
+### Silent installation
+The installer supports silent (unattended) installations. See [InnoSetup Setup Command Line Parameters](https://jrsoftware.org/ishelp/index.php?topic=setupcmdline) for details.
+A desktop icon can be created by enabling the task *desktopicon* and the included font [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) by enabling the task *fonts*.
+A silent installation for all users that also creates a desktop icon and installs the fonts can be invoked with
+
+```
+SPFSE-365.3454.20-SETUP.exe /VERYSILENT /ALLUSERS /TASKS="desktopicon,fonts"
+```
+
+If you want to install SPF/SE 365 just for the current user and not for all users, replace */ALLUSERS* with */CURRENTUSER*.
+There are more parameters avaiable (i. e. for creating a log file).
+As mentioned, please see the [InnoSetup Setup Command Line Parameters](https://jrsoftware.org/ishelp/index.php?topic=setupcmdline) for details.
+
+### Provided SPF/SE 356 installers
+Currently there is just one installers for SPF/SE 365 available.
+
+The installer [SPF/SE 365 Build 3454 installer](../../releases/tag/v365.3454.20) installs the last version of SPF/SE 365 released. 
+
+### Installation for all users
+The default installation directory is **C:\Program Files (x86)\SPF SourceEdit 365** if you install SPF/SE 365 for all users.
+Note that the permissions of the subdirectories **Macros** and **Dialogs** are set to *world-writable* so any user that uses SPF/SE 365 can add and edit new macros and dialogs.
+
+Additionally the directory **C:\ProgramData\SPF SourceEdit 365** is created. Settings changed by the user are stored in this dirctory.
+For this reason, the permissions of this directory is set to *world-writable* too.
+If you want to change the path to this directory, just create the directory where you want and set the environment variable *SPFGE365RW* to the corresponding path.
+
+### Installation for the current user
+The default installation directory is **C:\Users\YourUserNameHere\AppData\Local\SPF SourceEdit 365** if you install SPF/SE 365 just for the current user.
+
+Additionally the directory **C:\Users\YourUserNameHere\AppData\Roaming\SPF SourceEdit 365** is created. Settings changed by the user are stored in this dirctory.
+For this reason, the permissions of this directory is set to *world-writable* too.
+If you want to change the path to this directory, just create the directory where you want and set the environment variable *SPFGE365RW* to the corresponding path.
 
 ### Changes to the original release
 See the directories [dialogs-v365](dialogs-v365), [macros](macros) and [profiles-v365](profiles-v365) for files that are changed or added.
 
 The options are set so that SPF/SE 365 looks and feels (more or less) like the editor of ISPF under z/OS.
 This includes that the action *3270ENTER* is assigned to ENTER key on the numeric pad and *CarriageReturn* is assigned to the ENTER key.
-Sadly with SPF/SE 365 it is not possible to assign two keys to one action (like in SPF/SE 6.0, where I assigned the right CNTL key **and** ENTER key on the numeric pad to the action *3270ENTER*).
+
+Sadly with SPF/SE 365 it is not possible to assign two keys to one action (like in SPF/SE 6.0, where I've assigned the right CNTL key **and** ENTER key on the numeric pad to the action *3270ENTER*).
+
 And some options are set so that unprintable characters are not shown (because with some fonts SPF/SE 6.0 doesn't display them correctly).
 Furthermore some helpful macros have been added and various file profiles (especially for file types that are common if you work with z/OS or BS2000).
 
