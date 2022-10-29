@@ -27,6 +27,9 @@ Name: "{autoappdata}\{#AppName}\AllUsers"; Permissions: everyone-modify;
 Name: "{app}\macros";                      Permissions: everyone-modify;
 Name: "{app}\dialogs";                     Permissions: everyone-modify;
 
+[Tasks]
+Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
+
 [Files]
 Source: "orig-bin\*";       DestDir: "{app}\bin";          Flags: replacesameversion restartreplace
 Source: "orig-dialogs\*";   DestDir: "{app}\dialogs";      Flags: replacesameversion restartreplace
@@ -50,8 +53,11 @@ Root: HKCU; Check: not IsAdminInstallMode; Subkey: "{#UserSubkey}";  ValueType: 
 Root: HKCU; Check: not IsAdminInstallMode; Subkey: "{#UserSubkey}";  ValueType: string; ValueName: "SPFGE60RW"; ValueData: "{autoappdata}\{#AppName}"; Flags: uninsdeletevalue
 
 [Icons]
-Name: "{group}\SPF SourceEdit 6.0"; Filename: "{app}\bin\GraphicEdition60.exe";
-Name: "{group}\Uninstall";          Filename: "{uninstallexe}"
+Name: "{group}\{#AppName}"; Filename: "{app}\bin\GraphicEdition60.exe";
+Name: "{group}\Uninstall";  Filename: "{uninstallexe}"
+
+Check: IsAdminInstallMode;     Name: "{commondesktop}\SPFSE 6.0"; Filename: "{app}\bin\GraphicEdition60.exe"; Tasks: desktopicon
+Check: not IsAdminInstallMode; Name: "{userdesktop}\SPFSE 6.0";   Filename: "{app}\bin\GraphicEdition60.exe"; Tasks: desktopicon
 
 [Code]
 function GetDefaultDirName(Param: String): String;

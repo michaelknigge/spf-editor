@@ -52,9 +52,8 @@ Root: HKCU; Check: not IsAdminInstallMode; Subkey: "{#UserSubkey}";  ValueType: 
 Name: "{group}\{#AppName}";  Filename: "{app}\Bin\SPF80GE.exe";
 Name: "{group}\Uninstall";   Filename: "{uninstallexe}"
 
-[Icons]
-Check: IsAdminInstallMode;     Name: "{commondesktop}\{#AppName}"; Filename: "{app}\Bin\SPF80GE.exe"; Tasks: desktopicon
-Check: not IsAdminInstallMode; Name: "{userdesktop}\{#AppName}";   Filename: "{app}\Bin\SPF80GE.exe"; Tasks: desktopicon
+Check: IsAdminInstallMode;     Name: "{commondesktop}\SPFSE 365"; Filename: "{app}\Bin\SPF80GE.exe"; Tasks: desktopicon
+Check: not IsAdminInstallMode; Name: "{userdesktop}\SPFSE 365";   Filename: "{app}\Bin\SPF80GE.exe"; Tasks: desktopicon
 
 [Code]
 function GetDefaultDirName(Param: String): String;
