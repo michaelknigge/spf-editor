@@ -127,9 +127,9 @@ There are more parameters avaiable (i. e. for creating a log file).
 As mentioned, please see the [InnoSetup Setup Command Line Parameters](https://jrsoftware.org/ishelp/index.php?topic=setupcmdline) for details.
 
 ### Provided SPF/SE 356 installers
-Currently there is just one installers for SPF/SE 365 available.
+Currently there is just one installer for SPF/SE 365 available.
 
-The installer [SPF/SE 365 Build 3454 installer](../../releases/tag/v365.3454.20) installs the last version of SPF/SE 365 released. 
+The [SPF/SE 365 Build 3454 installer](../../releases/tag/v365.3454.20) installs the last version of SPF/SE 365 ever released. 
 
 ### Installation for all users
 The default installation directory is **C:\Program Files (x86)\SPF SourceEdit 365** if you install SPF/SE 365 for all users.
