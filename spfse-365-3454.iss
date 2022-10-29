@@ -53,8 +53,8 @@ Name: "{group}\{#AppName}";  Filename: "{app}\bin\SPFGE80.exe";
 Name: "{group}\Uninstall";   Filename: "{uninstallexe}"
 
 [Icons]
-Check: IsAdminInstallMode;     Name: "{commondesktop}\{#MyAppName}"; Filename: "{app}\bin\SPFGE80.exe"; Tasks: desktopicon
-Check: not IsAdminInstallMode; Name: "{userdesktop}\{#MyAppName}";   Filename: "{app}\bin\SPFGE80.exe"; Tasks: desktopicon
+Check: IsAdminInstallMode;     Name: "{commondesktop}\{#AppName}"; Filename: "{app}\bin\SPFGE80.exe"; Tasks: desktopicon
+Check: not IsAdminInstallMode; Name: "{userdesktop}\{#AppName}";   Filename: "{app}\bin\SPFGE80.exe"; Tasks: desktopicon
 
 [Code]
 function GetDefaultDirName(Param: String): String;
