@@ -6,7 +6,7 @@
 
 [Setup]
 AppName={#AppName}
-AppVerName={#AppName} Build {#AppBuildNumber}
+AppVerName={#AppName} Build {#AppBuildNumber}.{#AppveyorBuildNumber}
 AppPublisher=Command Technology Corporation
 AppPublisherURL=https://github.com/michaelknigge/spf-editor
 AppCopyright=Copyright (C) Command Technology Corporation
