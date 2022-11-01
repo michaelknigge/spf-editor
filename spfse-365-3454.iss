@@ -37,6 +37,7 @@ Source: "{#InstallDir}\Help\*";      DestDir: "{app}\Help";         Flags: repla
 Source: "{#InstallDir}\Macros\*";    DestDir: "{app}\Macros";       Flags: replacesameversion restartreplace
 Source: "{#InstallDir}\Profiles\*";  DestDir: "{app}\Profiles";     Flags: replacesameversion restartreplace
 
+Source: "icons-v365\*.ico"; DestDir: "{app}\Bin";      Flags: replacesameversion restartreplace
 Source: "dialogs-v365\*";   DestDir: "{app}\Dialogs";  Flags: replacesameversion restartreplace
 Source: "macros\*";         DestDir: "{app}\Macros";   Flags: replacesameversion restartreplace
 
@@ -52,11 +53,11 @@ Root: HKCU; Check: not IsAdminInstallMode; Subkey: "{#UserSubkey}";  ValueType: 
 Root: HKCU; Check: not IsAdminInstallMode; Subkey: "{#UserSubkey}";  ValueType: string; ValueName: "SPFGE365RW"; ValueData: "{autoappdata}\SPF-Options"; Flags: uninsdeletevalue
 
 [Icons]
-Name: "{group}\{#AppName}";  Filename: "{app}\Bin\SPF80GE.exe";
+Name: "{group}\{#AppName}";  Filename: "{app}\Bin\SPF80GE.exe"; IconFilename: "{app}\Bin\SPF80GE.ico"
 Name: "{group}\Uninstall";   Filename: "{uninstallexe}"
 
-Check: IsAdminInstallMode;     Name: "{commondesktop}\SPFSE 365"; Filename: "{app}\Bin\SPF80GE.exe"; Tasks: desktopicon
-Check: not IsAdminInstallMode; Name: "{userdesktop}\SPFSE 365";   Filename: "{app}\Bin\SPF80GE.exe"; Tasks: desktopicon
+Check: IsAdminInstallMode;     Name: "{commondesktop}\SPFSE 365"; Filename: "{app}\Bin\SPF80GE.exe"; IconFilename: "{app}\Bin\SPF80GE.ico"; Tasks: desktopicon
+Check: not IsAdminInstallMode; Name: "{userdesktop}\SPFSE 365";   Filename: "{app}\Bin\SPF80GE.exe"; IconFilename: "{app}\Bin\SPF80GE.ico"; Tasks: desktopicon
 
 [Code]
 function GetDefaultDirName(Param: String): String;

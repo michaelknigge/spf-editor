@@ -38,6 +38,7 @@ Source: "orig-help\*";      DestDir: "{app}\help";         Flags: replacesamever
 Source: "orig-macros\*";    DestDir: "{app}\macros";       Flags: replacesameversion restartreplace
 Source: "orig-profiles\*";  DestDir: "{app}\profiles";     Flags: replacesameversion restartreplace
 
+Source: "icons-v6\*.ico";   DestDir: "{app}\Bin";          Flags: replacesameversion restartreplace
 Source: "dialogs-v6\*";     DestDir: "{app}\dialogs";      Flags: replacesameversion restartreplace
 Source: "macros\*";         DestDir: "{app}\macros";       Flags: replacesameversion restartreplace
 
@@ -56,11 +57,11 @@ Root: HKCU; Check: not IsAdminInstallMode; Subkey: "{#UserSubkey}";  ValueType: 
 Root: HKCU; Check: not IsAdminInstallMode; Subkey: "{#UserSubkey}";  ValueType: string; ValueName: "SPFGE60RW"; ValueData: "{autoappdata}\{#AppName}"; Flags: uninsdeletevalue
 
 [Icons]
-Name: "{group}\{#AppName}"; Filename: "{app}\bin\GraphicEdition60.exe";
+Name: "{group}\{#AppName}"; Filename: "{app}\bin\GraphicEdition60.exe"; IconFilename: "{app}\Bin\GraphicEdition60.ico"
 Name: "{group}\Uninstall";  Filename: "{uninstallexe}"
 
-Check: IsAdminInstallMode;     Name: "{commondesktop}\SPFSE 6.0"; Filename: "{app}\bin\GraphicEdition60.exe"; Tasks: desktopicon
-Check: not IsAdminInstallMode; Name: "{userdesktop}\SPFSE 6.0";   Filename: "{app}\bin\GraphicEdition60.exe"; Tasks: desktopicon
+Check: IsAdminInstallMode;     Name: "{commondesktop}\SPFSE 6.0"; Filename: "{app}\bin\GraphicEdition60.exe"; IconFilename: "{app}\Bin\GraphicEdition60.ico"; Tasks: desktopicon
+Check: not IsAdminInstallMode; Name: "{userdesktop}\SPFSE 6.0";   Filename: "{app}\bin\GraphicEdition60.exe"; IconFilename: "{app}\Bin\GraphicEdition60.ico"; Tasks: desktopicon
 
 [Code]
 function GetDefaultDirName(Param: String): String;
