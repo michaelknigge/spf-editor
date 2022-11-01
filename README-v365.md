@@ -22,7 +22,7 @@ A desktop icon can be created by enabling the task *desktopicon* and the include
 A silent installation for all users that also creates a desktop icon and installs the fonts can be invoked with
 
 ```
-SPFSE-365.3454.20-SETUP.exe /VERYSILENT /ALLUSERS /TASKS="desktopicon,fonts"
+SPFSE-365.3454.21-SETUP.exe /VERYSILENT /ALLUSERS /TASKS="desktopicon,fonts"
 ```
 
 If you want to install SPF/SE 365 just for the current user and not for all users, replace */ALLUSERS* with */CURRENTUSER*.
@@ -33,7 +33,7 @@ As mentioned, please see the [InnoSetup Setup Command Line Parameters](https://j
 ### Provided SPF/SE 356 installers
 Currently there is just one installer for SPF/SE 365 available.
 
-The [SPF/SE 365 Build 3454 installer](../../releases/tag/v365.3454.20) installs the last version of SPF/SE 365 ever released. 
+The [SPF/SE 365 Build 3454 installer](../../releases/tag/v365.3454.21) installs the last version of SPF/SE 365 ever released. 
 
 ### Installation for all users
 The default installation directory is **C:\Program Files (x86)\SPF SourceEdit 365** if you install SPF/SE 365 for all users.

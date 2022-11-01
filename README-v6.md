@@ -19,7 +19,7 @@ A desktop icon can be created by enabling the task *desktopicon* and the include
 A silent installation for all users that also creates a desktop icon and installs the fonts can be invoked with
 
 ```
-SPFSE-6.0.1311.20-SETUP.exe /VERYSILENT /ALLUSERS /TASKS="desktopicon,fonts"
+SPFSE-6.0.1311.21-SETUP.exe /VERYSILENT /ALLUSERS /TASKS="desktopicon,fonts"
 ```
 
 If you want to install SPF/SE 6.0 just for the current user and not for all users, replace */ALLUSERS* with */CURRENTUSER*.
@@ -30,9 +30,9 @@ As mentioned, please see the [InnoSetup Setup Command Line Parameters](https://j
 ### Provided SPF/SE 6.0 installers
 Currently there are two installers for SPF/SE 6.0 available. An installer for SPF/SE 365 is also available.
 
-The first installer is [SPF/SE 6.0 Build 1272 installer](../../releases/tag/v6.0.1272.20). It is not the latest release of the SPF/SE 6.0 series but it is the release that I use without any problems since january 2010.
+The first installer is [SPF/SE 6.0 Build 1272 installer](../../releases/tag/v6.0.1272.21). It is not the latest release of the SPF/SE 6.0 series but it is the release that I use without any problems since january 2010.
 
-The second installer is [SPF/SE 6.0 Build 1311 installer](../../releases/tag/v6.0.1311.20). Note that since SPF/SE 6.0 Build 1283 the location of the default settings changed, as well as the file name. The file containing the default settings is now *spfse.prf* and is located in the directory *%SPF60RW%\System\AllUsers*.
+The second installer is [SPF/SE 6.0 Build 1311 installer](../../releases/tag/v6.0.1311.21). Note that since SPF/SE 6.0 Build 1283 the location of the default settings changed, as well as the file name. The file containing the default settings is now *spfse.prf* and is located in the directory *%SPF60RW%\System\AllUsers*.
 
 ### Installation for all users
 The default installation directory is **C:\Program Files (x86)\SPF SourceEdit 6.0** if you install SPF/SE 6.0 for all users.
