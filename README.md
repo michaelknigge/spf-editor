@@ -22,13 +22,13 @@ If you have other releases of SPF/SE and would like to see them here, please con
 Wouldn't it be great if (the latest release of) SPF/SE 8.0 would also be available here?
 
 # SPF/SE 365
-SPF/SE 365 is the latest version released by Tim Tetivia. See this [README-v6](README-v6.md) for further information about the available SPF/SE 6.0 releases and the provided custom installer.
+SPF/SE 365 is the latest version released by Tim Tetivia. See this [README-v365](README-v365.md) for further information about the available SPF/SE 365 releases and the provided custom installer.
 
 # SPF/SE 8.0
-Unfortunately I never owned a SPF/SE 8.0 release. If you have one, please send it to me and I will make it available here.
+Unfortunately I never owned a SPF/SE 8.0 release. If you have one, please send it to me and I will make it available here. I'd like to have one here.
 
 # SPF/SE 7.0
-Unfortunately I never owned a SPF/SE 7.0 release, but a SPF/SE 7.0 sent me one - thank you! Currently there is no custom installer available (but this may change).
+Unfortunately I never owned a SPF/SE 7.0 release, but a SPF/SE 7.0 user sent me one - thank you! Currently there is no custom installer available (but this may change).
 To make the SPF/SE 7.0 release a full working release, you need a serial number.
 As we've got the permission to distribute SPF/SE for free, we can also make a valid serial number available.
 You can use the serial number **70101185**.
