@@ -97,3 +97,30 @@ You can find them in the directories [profiles-v6](profiles-v6) and [profiles-v3
 | VX            | Files with a variable record length. Each record begins with a two-byte record length field (length of the record field **is not** included).                                                   |
 | VXA           | Same as VX (VX with ASA control characters)                                                                                                                                                     |
 | VXM           | Same as VX (VX with IBM control characters)                                                                                                                                                     |
+
+# SPF product history
+- SPF/SourceEdit 365 (released, Build 1886, April/2013)
+- SPF/SourceEdit 8.0 (released, Build 1800, Sept/2012)
+- SPF/SourceEdit 7.0 (released, Build 1400, June/2010)
+- SPF/SourceEdit 6.0 (released, Build 1109, Sept/2006)
+- SPF/SourceEdit 5.0 (released June/2005)
+- SPF/SourceEdit 4.5 (released Oct/2002)
+- SPF/SourceEdit 4.0 (released Oct/2001)
+- SPF/SourceEdit 3.5 (released Nov/2000)
+- SPF/SourceEdit 3.0 (released Apr/2000)
+- SPF/SourceEdit 2.5 (released Mar/1999)
+- SPF/SourceEdit 2.0 (released Mar/1998)
+- SPF/SourceEdit 1.0 (released Mar/1997)
+- SPF/Professional 5.0 (released Apr/1996)
+- SPF/Win 1.0 (released May/1995)
+- SPF/Shell for XDB (released Mar/1995)
+- SPF/Shell for DB2 (released Mar/1995)
+- SPF/Shell for MicroFoc (released Jan/1995)
+- SPF/PC 4.0 (released June/1994)
+- SPF/PC 3.0 (released Mar/1993)
+- SPF/2 2.0 (released May/1992)
+- SPF/2 1.0 (released Oct/1990)
+- SPF/PC 2.1 (released Jan/1990)
+- SPF/PC 2.0 (released Mar/1988)
+- GML/PC 1.0 (released Sept/1986)
+- SPF/PC 1.0 (released June/1984)
