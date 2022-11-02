@@ -82,7 +82,7 @@ Some macros are only useful if assigned to a key. See what is assigned by defaul
 
 # File profiles
 The fun begins with file profiles. The provided InnoSetup installer installs some useful profiles (at least useful if you work a lot with files from z/OS or BS2000 Mainframes).
-You can find them in the directory [profiles](profiles). Here are some of the noteworthy file profiles:
+You can find them in the directories [profiles-v6](profiles-v6) and [profiles-v356](profiles-v365). Here are some of the noteworthy file profiles:
 
 | Profile       | File type                                                                                                                                                                                       |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
