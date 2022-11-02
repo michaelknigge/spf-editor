@@ -53,8 +53,6 @@ If you want to change the path to this directory, just create the directory wher
 See the directories [dialogs-v6](dialogs-v6), [macros](macros) and [profiles-v6](profiles-v6) for files that are changed or added.
 
 The options are set so that SPF/SE 6.0 looks and feels (more or less) like the editor of ISPF under z/OS.
-This includes that the action *3270ENTER* is assigned to the right CNTL key and the ENTER key on the numeric pad.
-The action *CarriageReturn* is assigned to the ENTER key.
 
 And some options are set so that unprintable characters are not shown (because with some fonts SPF/SE 6.0 doesn't display them correctly).
 Furthermore some helpful macros have been added and various file profiles (especially for file types that are common if you work with z/OS or BS2000).
