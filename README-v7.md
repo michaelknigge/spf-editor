@@ -19,7 +19,7 @@ A desktop icon can be created by enabling the task *desktopicon* and the include
 A silent installation for all users that also creates a desktop icon and installs the fonts can be invoked with
 
 ```
-SPFSE-7.0.1651.21-SETUP.exe /VERYSILENT /ALLUSERS /TASKS="desktopicon,fonts"
+SPFSE-7.0.1651.25-SETUP.exe /VERYSILENT /ALLUSERS /TASKS="desktopicon,fonts"
 ```
 
 If you want to install SPF/SE 7.0 just for the current user and not for all users, replace */ALLUSERS* with */CURRENTUSER*.
