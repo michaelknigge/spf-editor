@@ -1,0 +1,15 @@
+Recfm=RDP
+MaxRecLen=32768
+RDPAddToReclen=0
+RDPReclenByteOrder=IBM
+RDPStaticBefore=NONE
+RDPStaticAfter=NONE
+Offset=0
+Bounds=1,4096
+Tabs=0
+CharsetFile=EBCDIC
+CharsetDisplay=ASCII-ISO8859
+NumberType=None
+CapsMode=OFF
+BOOLbackup=FALSE
+BOOLlock=FALSE

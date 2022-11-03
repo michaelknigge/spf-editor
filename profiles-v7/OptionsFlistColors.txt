@@ -1,0 +1,3 @@
+SELECT 6,0
+DIR 11,0
+FILE 3,0

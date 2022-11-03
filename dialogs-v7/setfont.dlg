@@ -1,0 +1,6 @@
+dialog { title="Font selection" }
+
+obj    { type=list    row=1    col=1   width=30   depth=8    var=&List   vscroll=yes   commit=yes  }
+
+obj    { type=button  row=9   col=1   width=8    text="Ok"                             default=yes }
+obj    { type=button  row=9   col=10  width=8    text="Cancel"                         cancel=yes  }

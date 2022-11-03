@@ -1,0 +1,12 @@
+MsgSound Sound1
+MouseWheel.Vscroll 1
+Recycle FALSE
+RetrievePcmdHistory FALSE
+DateFormat USA
+TextMonday Monday
+TextTuesday Tuesday
+TextWednesday Wednesday
+TextThursday Thursday
+TextFriday Friday
+TextSaturday Saturday
+TextSunday Sunday
