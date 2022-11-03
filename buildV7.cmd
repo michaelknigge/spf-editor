@@ -30,4 +30,4 @@ rem Sleep a little bit (10 seconds... installation of SPF/SE 7.0 is very fast)
 timeout /t 10
 
 rem Building the installer using InnoSetup
-"C:\Program Files (x86)\Inno Setup 6\iscc.exe" spfse-7-%1.iss /DAppveyorBuildNumber=%2
+"C:\Program Files (x86)\Inno Setup 6\iscc.exe" spfse-70-%1.iss /DAppveyorBuildNumber=%2
