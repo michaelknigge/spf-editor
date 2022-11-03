@@ -36,11 +36,23 @@ Version 6.0 is a solid release that I use daily. See this [README-v6](README-v6.
 # SPF/SE 5.0
 For nostalgica there is a SPF/SE 5.0 available. See the [binaries](binaries) directory.
 
+To make the SPF/SE 5.0 release a full working release, you need a serial number.
+As we've got the permission to distribute SPF/SE for free, we can also make a valid serial number available.
+You can use the serial number **50101185**.
+
 # SPF/SE 4.0
 For nostalgica there is a SPF/SE 4.0 available. See the [binaries](binaries) directory.
 
+To make the SPF/SE 4.0 release a full working release, you need a serial number.
+As we've got the permission to distribute SPF/SE for free, we can also make a valid serial number available.
+You can use the serial number **SORRY... HAVE NO SERIAL**.
+
 # SPF/SE 3.5
 For nostalgica there is a SPF/SE 3.5 available. See the [binaries](binaries) directory.
+
+To make the SPF/SE 3.5 release a full working release, you need a serial number.
+As we've got the permission to distribute SPF/SE for free, we can also make a valid serial number available.
+You can use the serial number **50101185**.
 
 # Macros
 Several macros are added to the vanilla SPF/SE installation if you use one of the custom installers.
