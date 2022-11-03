@@ -56,8 +56,8 @@ Root: HKCU; Check: not IsAdminInstallMode; Subkey: "{#UserSubkey}";  ValueType: 
 Name: "{group}\{#AppName}";  Filename: "{app}\bin\GraphicEdition.exe"; IconFilename: "{app}\bin\GraphicEdition.ico"
 Name: "{group}\Uninstall";   Filename: "{uninstallexe}"
 
-Check: IsAdminInstallMode;     Name: "{commondesktop}\SPFSE 7.0"; Filename: "{app}\Bin\SPF80GE.exe"; IconFilename: "{app}\bin\GraphicEdition.ico"; Tasks: desktopicon
-Check: not IsAdminInstallMode; Name: "{userdesktop}\SPFSE 7.0";   Filename: "{app}\Bin\SPF80GE.exe"; IconFilename: "{app}\bin\GraphicEdition.ico"; Tasks: desktopicon
+Check: IsAdminInstallMode;     Name: "{commondesktop}\SPFSE 7.0"; Filename: "{app}\bin\GraphicEdition.exe"; IconFilename: "{app}\bin\GraphicEdition.ico"; Tasks: desktopicon
+Check: not IsAdminInstallMode; Name: "{userdesktop}\SPFSE 7.0";   Filename: "{app}\bin\GraphicEdition.exe"; IconFilename: "{app}\bin\GraphicEdition.ico"; Tasks: desktopicon
 
 [Code]
 function GetDefaultDirName(Param: String): String;
