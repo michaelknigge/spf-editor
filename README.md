@@ -33,6 +33,15 @@ Unfortunately I never owned a SPF/SE 7.0 release, but a SPF/SE 7.0 user sent me 
 # SPF/SE 6.0
 Version 6.0 is a solid release that I use daily. See this [README-v6](README-v6.md) for further information about the available SPF/SE 6.0 releases and the provided custom installer.
 
+# SPF/SE 5.0
+For nostalgica there is a SPF/SE 5.0 available. See the [binaries](binaries) directory.
+
+# SPF/SE 4.0
+For nostalgica there is a SPF/SE 4.0 available. See the [binaries](binaries) directory.
+
+# SPF/SE 3.5
+For nostalgica there is a SPF/SE 3.5 available. See the [binaries](binaries) directory.
+
 # Macros
 Several macros are added to the vanilla SPF/SE installation if you use one of the custom installers.
 Here are some of them explained. You can see all of them in the directory [macros](macros).
