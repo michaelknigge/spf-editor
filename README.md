@@ -22,7 +22,7 @@ If you have other releases of SPF/SE and would like to see them here, please con
 Wouldn't it be great if (the latest release of) SPF/SE 8.0 would also be available here?
 
 # SPF/SE 365
-SPF/SE 365 is the latest version released by Tim Tetivia. See this [README-v365](README-v365.md) for further information about the available SPF/SE 365 releases and the provided custom installer.
+SPF/SE 365 is the latest version released by Tim Tetivia. If you are a new user you should go with this release. See this [README-v365](README-v365.md) for further information about the available SPF/SE 365 releases and the provided custom installer.
 
 # SPF/SE 8.0
 Unfortunately I never owned a SPF/SE 8.0 release. If you have one, please send it to me and I will make it available here. I'd like to have one here.
