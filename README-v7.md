@@ -30,7 +30,7 @@ As mentioned, please see the [InnoSetup Setup Command Line Parameters](https://j
 ### Provided SPF/SE 7.0 installers
 Currently there is just one installer for SPF/SE 7.0 available.
 
-The  installer is [SPF/SE 7.0 Build 1651 installer](../../releases/tag/v7.0.1651.21).
+The  installer is [SPF/SE 7.0 Build 1651 installer](../../releases/tag/v7.0.1651.25).
 
 ### Installation for all users
 The default installation directory is **C:\Program Files (x86)\SPF SourceEdit 7.0** if you install SPF/SE 7.0 for all users.
