@@ -45,7 +45,7 @@ For nostalgica there is a SPF/SE 4.0 available. See the [binaries](binaries) dir
 
 To make the SPF/SE 4.0 release a full working release, you need a serial number.
 As we've got the permission to distribute SPF/SE for free, we can also make a valid serial number available.
-You can use the serial number **SORRY... HAVE NO SERIAL**.
+You can use the serial number **30101185** (yes, the serial number for version 3.5 works with 4.0, too).
 
 # SPF/SE 3.5
 For nostalgica there is a SPF/SE 3.5 available. See the [binaries](binaries) directory.
